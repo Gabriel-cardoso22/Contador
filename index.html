@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>21/05/2023</title>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="coracao.png" type="image/png">
+</head>
+<body>
+
+  <header>
+    <h1 id="titulo">Gabs & Gigi</h1>
+  </header>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img4.jpg" alt="Foto 1"></div>
+      <div class="swiper-slide"><img src="img5.jpg" alt="Foto 2"></div>
+      <div class="swiper-slide"><img src="img3.jpg" alt="Foto 3"></div>
+      <div class="swiper-slide"><img src="img6.jpg" alt="Foto 4"></div>
+      <div class="swiper-slide"><img src="img7.jpg" alt="Foto 5"></div>
+      <div class="swiper-slide"><img src="img8.jpg" alt="Foto 6"></div>
+      <div class="swiper-slide"><img src="img9.jpg" alt="Foto 7"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div id="contador"></div>
+
+  <div class="mensagem">Feliz 2 anos meu amorrr!!! <br>
+    Sou muito grato por tudo que já passei ao seu lado, e sonho com tudo que vamos viver.
+    Nesses dois anos nossas vidas passaram por muitas mudanças que nos fizeram mais fortes e independente do que vier
+    estaremos juntos!! S2
+  </div>
+
+  <iframe src="https://www.youtube.com/embed/3AtDnEC4zak" allowfullscreen></iframe>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</body>
+</html>
