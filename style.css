@@ -55,28 +55,36 @@ h1 {
 }
 
 .mensagem {
-    font-size: 1.1rem;
-    width: 80%;
+    font-size: 1rem;
+    max-width: 600px;
+    width: 90%;
     margin: 20px auto;
     color: #ecf0f1;
     background-color: #1a2229;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
+    word-wrap: break-word;
 }
 
+
 iframe {
-    width: 80%;
+    width: 100%;
+    max-width: 600px;
     height: 315px;
     margin: 20px auto;
     display: block;
     border: none;
 }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
 
-#gato-andando {
-    position: fixed;
-    bottom: 0;
-    left: -100px;
-    width: 80px;
-    z-index: 9999;
-    pointer-events: none;
+    #contador {
+        font-size: 1.2rem;
+    }
+
+    .mensagem {
+        font-size: 0.95rem;
+    }
 }
